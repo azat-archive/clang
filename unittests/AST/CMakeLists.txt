@@ -15,6 +15,7 @@ add_clang_unittest(ASTTests
   NamedDeclPrinterTest.cpp
   SourceLocationTest.cpp
   StmtPrinterTest.cpp
+  LeftoverExpressionsForODRAfterFatalError.cpp
   )
 
 target_link_libraries(ASTTests
