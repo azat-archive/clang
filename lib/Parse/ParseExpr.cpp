@@ -1459,6 +1459,7 @@ Parser::ParsePostfixExpressionSuffix(ExprResult LHS) {
              })) {
             (void)Actions.CorrectDelayedTyposInExpr(LHS);
             LHS = ExprError();
+            Actions.DiscardCleanupsInEvaluationContext();
           }
         }
       }
